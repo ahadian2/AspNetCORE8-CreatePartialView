@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>بلاگ</h1>
+
+@* @{
+    await Html.RenderPartialAsync("Partials/_BlogPartial");
+}
+<br />
+<hr />
+@Html.Partial("Partials/_BlogPartial")
+<br />
+<hr /> *@
+
+@{
+    ViewData["Message"] = "این پیام تست میباشد.";
+}
+<partial name="Partials/_BlogPartial" />
